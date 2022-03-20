@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/* Overwites to customize bootstrap styles */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #111111;
+  position: relative;
+  margin-top: 4.6rem;
+  height: 100%;
+}
+
+p {
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
+  color: #737373;
+  font-weight: 500;
+}
+
+/* Removes blue border from around links and buttons */
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+/* Navbar styles */
+.nav-link {
+  color: #464646 !important;
+  text-decoration: underline 0.25em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+  transition: text-decoration-color 300ms;
+}
+.nav-link:hover {
+  text-decoration-color: #111111;
+}
+.nav-link:focus {
+  text-decoration-color: #111111;
+}
+
+.nav-link:active,
+.nav .active {
+  text-decoration-color: #CF755A;
+}
+
+/* Uses animated background method.  Needs to be fixed for scrollspy. */
+/*
+.nav-link {
+  color: rgba(0, 0, 0, 1) !important;
+  display: inline-block;
+  position: relative;
+}
+
+// underline background animation 
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 85%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 7px;
+  right: 0;
+  background-color: $orange;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after,
+.nav-link:focus:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+//hide underline animation when menu is expanded on mobile 
+.show .nav-link:after,
+.show .nav-link:hover:after,
+.show .nav-link:focus:after {
+  background: 0 none;
+}
+//breaks if the nav is shown on sm breakpoint and then re-expanded
+*/
+/* Hero customizations */
+.hero {
+  background-color: #AEC1BA;
+  transition: background-size 300ms ease-out;
+}
+.hero h1 {
+  color: #ffffff;
+  font-weight: 800;
+}
+.hero p.lead {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #111111;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    background-image: url(../../images/avatar-rotated.svg);
+    background-size: 30rem;
+    background-position: 110% center;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    background-size: 38rem;
+    background-position: 110% center;
+  }
+}
+@media (min-width: 1400px) {
+  .hero {
+    background-size: 45rem;
+    background-position: 106% center;
+  }
+}
+/* End Hero customizations */
+.cta {
+  color: #CF755A;
+  text-decoration: none !important;
+}
+.cta::before {
+  font-family: "Material Design Icons";
+  content: "󰳠";
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0.3em 0.25em 0 0;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 4px !important;
+}
+
+.btn-primary,
+.btn-primary:focus {
+  background-color: #CF755A;
+  border-color: #CF755A;
+  transition: all 200ms ease-out;
+}
+.btn-primary:hover,
+.btn-primary:focus:hover {
+  transform: scale(1.03);
+  background-color: #E0866A;
+  border-color: #E0866A;
+}
+
+/* Portfolio gallery */
+#gallery .card {
+  border: 1px solid #dddddd;
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+#gallery .card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 1.1px 2.2px rgba(0, 0, 0, 0.02), 0px 2.5px 5.3px rgba(0, 0, 0, 0.028), 0px 4.8px 10px rgba(0, 0, 0, 0.035), 0px 8.5px 17.9px rgba(0, 0, 0, 0.042), 0px 15.9px 33.4px rgba(0, 0, 0, 0.05), 0px 38px 80px rgba(0, 0, 0, 0.07);
+}
+#gallery .card-img-top {
+  filter: brightness(99%);
+}
+#gallery .card-body {
+  border-top: 1px solid #dddddd;
+}
+#gallery .card-link {
+  font-weight: 600;
+  text-decoration: none;
+  color: #CF755A;
+}
+#gallery .card-link:hover {
+  color: #CF755A;
+}
+#gallery .card-link::before {
+  font-family: "Material Design Icons";
+  content: "󰳠";
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0.3em 0.25em 0 0;
+}
+
+/* Sections */
+.about-me {
+  background-color: #EFEFEF;
+}
+
+.my-work {
+  background-color: #F7F7F7;
+}
+
+.reach-out {
+  background-color: #D8D5BF;
+}
+
+.footer {
+  background-color: #AEC1BA;
+}
+
+/* Social buttons */
+.social-buttons {
+  background-color: #CF755A;
+  color: #ffffff;
+  transition: all 200ms ease-out;
+  /*transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0px 1.1px 2.2px rgba(0, 0, 0, 0.02),
+        0px 2.5px 5.3px rgba(0, 0, 0, 0.028),
+        0px 4.8px 10px rgba(0, 0, 0, 0.035),
+        0px 8.5px 17.9px rgba(0, 0, 0, 0.042),
+        0px 15.9px 33.4px rgba(0, 0, 0, 0.05),
+        0px 38px 80px rgba(0, 0, 0, 0.07);
+
+  }*/
+}
+.social-buttons:hover {
+  transform: scale(1.1);
+  background-color: #E0866A;
+  border-color: #E0866A;
+}
+
+/* Modal body styles */
+.modal-header {
+  border-bottom: 1px solid #505050;
+}
+
+.modal-body {
+  color: FBF7EA;
+  background-color: #111111;
+}
+.modal-body h1 {
+  color: #D8D5BF;
+  font-weight: 700;
+}
+.modal-body p.lead {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: FBF7EA;
+  font-weight: 500;
+}
+.modal-body p {
+  color: #ffffff;
+  font-weight: 400;
+}
+.modal-body p a {
+  color: #CF755A;
+  font-weight: 600;
+  text-decoration: underline 0.15em #CF755A;
+  text-underline-offset: 0.2em;
+}
+.modal-body .section-caption {
+  color: FBF7EA;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.modal-body .full-img {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.modal-body .full-img img {
+  max-height: 65vh;
+  width: 100%;
+  object-position: top;
+  object-fit: cover;
+  transition: all 2000ms ease-out;
+}
+.modal-body .full-img-expanded {
+  max-height: 5000px !important;
+}
+.modal-body .img-overlay {
+  display: block;
+  margin-top: -7rem;
+  margin-bottom: 0.2rem;
+  height: 7.05rem;
+  position: relative;
+  z-index: 1000;
+  background: white;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 8%, rgba(56, 56, 56, 0.5044518051) 26%, #111111 69%);
+}
+
+.masthead--old {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-image: url(/_work-files/main-avatar.png);
+  background-size: 35rem;
+  background-position: top -5rem right 7%;
+  background-repeat: no-repeat;
+  background-color: olive;
+  background-blend-mode: none;
+  min-height: 30rem;
+  max-height: 30rem;
+  overflow-y: hidden;
+}

@@ -1,0 +1,129 @@
+<!-- All Modal content goes here.  It inherits the higherlevel tags and displays as pasrt of the page it was called on, therefore it's partial. -->
+
+<!-- Modal header goes here -->
+<div class="modal-header">
+    <h5 class="modal-title h6 fw-bold" style="font-size: 0.75rem;"><i class="mdi mdi-web pe-2"></i>MichaelLewsWrites.com
+        <span class="ps-3 fw-normal">Project details</span></h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<!-- Modal body goes here -->
+<div class="modal-body">
+    <!-- Page intro -->
+    <div class="container pb-4 page-intro">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-8">
+                <h1 class="display-4 pt-4 text-center">Micheal Lewis Writes <span class="text-nowrap">(dot com)</span>
+                </h1>
+                <p class="text-center fs-6 lead">Creative direction | UX | Visual design | Development</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main image -->
+    <div class="container pb-5 main-content">
+        <div class="row">
+            <div class="col">
+                <div class="full-img">
+                    <img src="images/portfolio/michael-lewis-orig.jpg" class="img-fluid" />
+                </div>
+                <div class="p-3 justify-content-center text-center align-middle img-overlay">
+                    <a class="btn btn-primary px-4 py-3 mt-4 shadow show-img" tabindex="-1" role="button"
+                        aria-disabled="true" data-bs-toggle="collapse">
+                        <i class="mdi mdi-arrow-down-bold-circle-outline pe-2"></i>Expand the full image</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page copy & other content -->
+    <div class="container pb-5 copy">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <p class="section-caption mb-2"><i class="mdi mdi-web pe-2"></i>Website/platform design</p>
+                <h2 class="fw-bold fs-4 mb-3">A project becomes a platform</h2>
+                <p>Author Michael Lewis was already extremely active online but had no central hub for his work. His
+                    publisher, W. W. Norton offered to provide him with a simple but effective website that not only
+                    promoted the author and
+                    his work, but served as a central hub for his prolific online writing for <i>Vanity Fair</i> and
+                    other
+                    publications.</p>
+                <figure class="figure">
+                    <img src="images/portfolio/michael-lewis-book-display.jpg" class="img-fluid img-thumbnail" />
+                    <figcaption class="figure-caption pt-2">Book details</figcaption>
+                </figure>
+                <p><a href="http://www.michaellewiswrites.com/" target="_new" class="cta">Visit the live site</p></a>
+                <p>When the site was successfully launched we began to get inquiries from other authors about providing
+                    the same service. Rather than reinvent the wheel, we used the foundation of Lewis’ site to create a
+                    system for authors to quickly get a web presence online.
+                </p>
+                <figure class="figure">
+                    <img src="images/portfolio/thornton-screen.png" class="img-fluid img-thumbnail" />
+                    <figcaption class="figure-caption pt-2">Sarah Thornton's site built using the same framework
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+    <p>
+        <img src="https://via.placeholder.com/1500x525.webp" class="img-fluid" />
+    </p>
+    <p>Accusamus aliquid, beatae debitis qui numquam illo perspiciatis hic cum. A eligendi soluta delectus praesentium
+        totam cum tempora eius maxime sed veritatis, ex, provident eaque beatae amet quos, exercitationem accusantium!
+        Pariatur aliquid animi tenetur, dolor quasi eligendi reiciendis saepe eaque eum blanditiis odio voluptatum quo,
+        quam odit?</p>
+    <p>
+        <div class="ratio ratio-21x9 my-4">
+            <iframe src="https://www.youtube.com/embed/z5GjLcgzkwc" title="YouTube video" allowfullscreen></iframe>
+        </div>
+    </p>
+    <p>
+        <div class="ratio ratio-16x9 my-4">
+            <video controls poster="vid/bbb-splash.jpg" preload="none">
+                <source src="vid/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </div>
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit <a href="http://google.com">amet consectetur adipisicing</a> elit. Amet, tempora laborum.
+        Vel nihil reprehenderit,
+        similique pariatur eius hic soluta incidunt consequatur earum omnis provident quas laborum rerum voluptates est
+        iusto vero labore libero dolor eveniet repellendus perspiciatis quia vitae. Id quam, ipsam suscipit, praesentium
+        facilis laudantium nam temporibus voluptatum similique distinctio accusantium fugiat unde qui veritatis libero
+        eius at quos sequi ad adipisci. Voluptate, vel quibusdam molestias beatae ipsam harum aspernatur, dignissimos
+        quis, aliquid adipisci corporis.</p>
+    <p><a href="https://google.com" class="cta">Learn more</p></a>
+    <p>Veniam quibusdam cupiditate ullam error molestiae exercitationem pariatur vitae
+        velit voluptatibus iste ducimus itaque rem aut sapiente culpa soluta perspiciatis deserunt rerum provident
+        quisquam, accusantium excepturi veritatis nihil. Nam aliquam non ipsam minima quo aut sequi optio, quasi ab
+        veniam quos repudiandae tenetur eaque enim aspernatur, quae commodi tempora, beatae laudantium consectetur illum
+        rem cum et! Architecto facere, voluptatum quasi omnis ipsa maxime veniam illo ex pariatur cumque aperiam,
+        distinctio placeat sed facilis nesciunt?
+    </p>
+    -->
+</div>
+
+
+<!-- Footer with action buttons if needed 
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>-->
+
+
+<!-- Smart quotes -->
+<script>
+    smartquotes();
+</script>
+<script>
+    // Expands the main image and hides the "show" button container
+    $(".show-img").click(function () {
+        $(".full-img img").toggleClass("full-img-expanded")
+    });
+    $(".show-img").click(function () {
+        $(".img-overlay").hide();
+    });
+</script>

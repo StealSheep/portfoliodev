@@ -1,0 +1,79 @@
+<!-- All Modal content goes here.  It inherits the higherlevel tags and displays as pasrt of the page it was called on, therefore it's partial. --> 
+<!-- Modal header goes here --> 
+<div class="modal-header"> 
+    <h5 class="modal-title h6 fw-bold" style="font-size: 0.75rem;"><i class="mdi mdi-forum-outline pe-2"></i>Social media <span class="ps-3 fw-normal">Project details</span></h5> 
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>     
+</div> 
+<!-- Modal body goes here --> 
+<div class="modal-body"> 
+    <!-- Page intro -->     
+    <div class="container pb-4 page-intro"> 
+        <div class="row justify-content-center"> 
+            <div class="col-lg-7 col-md-8"> 
+                <h1 class="display-4 pt-4 text-center">Social media </h1> 
+                <p class="text-center fs-6 lead">Creative direction | Visual design</p> 
+            </div>             
+        </div>         
+    </div>     
+    <!-- Main image -->     
+    <div class="container pb-5 main-content"> 
+        <div class="row"> 
+            <div class="col"> 
+                <div class="ratio ratio-16x9"> 
+                    <video controls poster="images/portfolio/sa-social.png" preload="auto"> 
+                        <source src="images/portfolio/sa-social.mp4" type="video/mp4"/> 
+                    </video>                     
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+    <!-- Page copy & other content -->     
+    <div class="container pb-4 copy"> 
+        <div class="row justify-content-center"> 
+            <div class="col-12 col-md-8"> 
+                <p class="section-caption mb-2"><i class="mdi mdi-forum-outline pe-2"></i>Social media </p> 
+                <h2 class="fw-bold fs-4 mb-3">Raising awareness</h2> 
+                <p>A selection of social media assets created by me and my team for UBS. </p> 
+                <figure class="figure"> 
+                    <img src="images/portfolio/qv-pencil.png" class="img-fluid img-thumbnail" alt="Pencil sketches"/> 
+                    <figcaption class="figure-caption pt-2">Pencil sketches</figcaption>                     
+                </figure>                 
+                <figure class="figure"> 
+                    <img src="images/portfolio/qv-wires.png" class="img-fluid img-thumbnail" alt="Wireframe mockup"/> 
+                    <figcaption class="figure-caption pt-2">Wireframe mockup</figcaption>                     
+                </figure>                 
+                <p>Given that this was a mission-critical app accessed thousands of times a day by sales and production
+                    staff it needed some love. So our staff spent some time speaking with a select group of users and
+                    came up with a punch-list of improvements we needed to make. In addition to applying an actual
+                    visual
+                    design, reponsive and accessibility rules were applied with an emphasis on the most-used tools
+                    according to the users. </p> 
+                <figure class="figure"> 
+                    <img src="images/portfolio/qv-sandbox.png" class="img-fluid img-thumbnail" alt="Visual design"/> 
+                    <figcaption class="figure-caption pt-2">Visual design</figcaption>                     
+                </figure>                 
+                <figure class="figure"> 
+                    <img src="images/portfolio/qv-mobile-composite.png" class="img-fluid img-thumbnail" alt="Mobile view"/> 
+                    <figcaption class="figure-caption pt-2">Mobile views</figcaption>                     
+                </figure>                 
+            </div>             
+        </div>         
+    </div>     
+</div> 
+<!-- Footer with action buttons if needed 
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>--> 
+<!-- Smart quotes --> 
+<script>
+    smartquotes();
+</script> 
+<script>
+    // Expands the main image and hides the "show" button container
+    $(".show-img").click(function () {
+        $(".full-img img").toggleClass("full-img-expanded")
+    });
+    $(".show-img").click(function () {
+        $(".img-overlay").hide();
+    });
+</script>

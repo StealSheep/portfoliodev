@@ -1,0 +1,136 @@
+<!-- All Modal content goes here.  It inherits the higherlevel tags and displays as pasrt of the page it was called on, therefore it's partial. -->
+<!-- Modal header goes here -->
+<div class="modal-header">
+    <h5 class="modal-title h6 fw-bold" style="font-size: 0.75rem;"><i class="mdi mdi-forum-outline pe-2"></i>Social
+        media <span class="ps-3 fw-normal">Project details</span></h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<!-- Modal body goes here -->
+<div class="modal-body">
+    <!-- Page intro -->
+    <div class="container pb-4 page-intro">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-8">
+                <h1 class="display-4 pt-4 text-center">Social media </h1>
+                <p class="text-center fs-6 lead">Creative direction | Visual design</p>
+            </div>
+        </div>
+    </div>
+    <!-- Main image -->
+    <div class="container pb-5 main-content">
+        <div class="row">
+            <div class="col">
+                <div class="ratio ratio-16x9">
+                    <video controls poster="images/portfolio/sa-social.png" preload="auto" playsinline>
+                        <source src="images/portfolio/sa-social.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page copy & other content -->
+    <div class="container pb-4 copy">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <p class="section-caption mb-2"><i class="mdi mdi-forum-outline pe-2"></i>Social media </p>
+                <h2 class="fw-bold fs-4 mb-3">Raising awareness</h2>
+                <p>A selection of social media assets created by me and my team for UBS.</p>
+                <p>A key driver in our strategy is to meet our users where they are. Using data gathered from our Social
+                    Media and Platform teams and working with our content and copy teams, we were able to target our
+                    audiance and deliver the message and experiences
+                    that were most relevant to them in a way they were most likely to engage with.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mb-4">
+                <img src="images/portfolio/ubs-social-static-1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <img src="images/portfolio/ubs-social-static-2.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mb-4">
+                <img src="images/portfolio/ubs-social-static-3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <img src="images/portfolio/ubs-social-static-4.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mb-4">
+                <img src="images/portfolio/ubs-social-animated-1.gif" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <img src="images/portfolio/ubs-social-animated-2.gif" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container pb-5 main-content">
+        <div class="row">
+            <div class="col">
+                <div class="ratio ratio-16x9">
+                    <video controls poster="images/portfolio/education-social.png" preload="auto" playsinline>
+                        <source src="images/portfolio/education-social.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4 copy">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <h3 class="fw-bold fs-5 mb-3">In context</h3>
+                <p>Additional posts as displayed on their respective sites using a photographic style.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mb-4">
+                <img src="images/portfolio/ubs-social-cbb-8.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <img src="images/portfolio/ubs-social-cbb-9.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <img src="images/portfolio/ubs-social-cbb-10.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mb-4">
+                <img src="images/portfolio/ubs-social-cbb-6.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <img src="images/portfolio/ubs-social-cbb-11.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <img src="images/portfolio/ubs-social-cbb-12.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Footer with action buttons if needed 
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>-->
+<!-- Smart quotes -->
+<script>
+    smartquotes();
+</script>
+<script>
+    // Expands the main image and hides the "show" button container
+    $(".show-img").click(function () {
+        $(".full-img img").toggleClass("full-img-expanded")
+    });
+    $(".show-img").click(function () {
+        $(".img-overlay").hide();
+    });
+</script>
