@@ -1,25 +1,19 @@
 /* Overwites to customize bootstrap styles */
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-$main-font-stack: 'Poppins',
-Arial,
-Helvetica,
-sans-serif;
-$secondary-font-stack: 'Heebo',
-Arial,
-Helvetica,
-sans-serif;
+$main-font-stack: "Poppins", Arial, Helvetica, sans-serif;
+$secondary-font-stack: "Heebo", Arial, Helvetica, sans-serif;
 $primary-color: #111111;
 $secondary-font-color: #ffffff;
 $gray-text: #737373;
-$soft-green: #AEC1BA;
-$orange: #CF755A;
-$light-gray-bg: #EFEFEF;
-$almost-white-gray: #F7F7F7;
-$tan: #D8D5BF;
+$soft-green: #aec1ba;
+$orange: #cf755a;
+$light-gray-bg: #efefef;
+$almost-white-gray: #f7f7f7;
+$tan: #d8d5bf;
 $modal-text-color: FBF7EA;
 $nav-link-color: #464646;
-$button-hover-color: #E0866A;
+$button-hover-color: #e0866a;
 
 html {
   scroll-behavior: smooth;
@@ -49,7 +43,7 @@ p {
 .nav-link {
   color: $nav-link-color !important;
   text-decoration: underline 0.25em rgba(0, 0, 0, 0);
-  text-underline-offset: 0.50em;
+  text-underline-offset: 0.5em;
   transition: text-decoration-color 300ms;
 
   //transition-delay: 100ms;
@@ -66,7 +60,6 @@ p {
 .nav .active {
   text-decoration-color: $orange;
 }
-
 
 /* Uses animated background method.  Needs to be fixed for scrollspy. */
 
@@ -106,7 +99,6 @@ p {
 }
 //breaks if the nav is shown on sm breakpoint and then re-expanded
 */
-
 
 /* Hero customizations */
 .hero {
@@ -154,11 +146,11 @@ p {
   text-decoration: none !important;
 
   &::before {
-    font-family: 'Material Design Icons';
+    font-family: "Material Design Icons";
     content: "\F0CE0";
     font-weight: bold;
-    font-size: 1.0em;
-    line-height: 1.0em;
+    font-size: 1em;
+    line-height: 1em;
     margin: 0.3em 0.25em 0 0;
   }
 }
@@ -184,7 +176,6 @@ p {
   }
 }
 
-
 /* Portfolio gallery */
 #gallery {
   & .card {
@@ -193,14 +184,11 @@ p {
 
     &:hover {
       transform: scale(1.01);
-      box-shadow:
-        0px 1.1px 2.2px rgba(0, 0, 0, 0.02),
+      box-shadow: 0px 1.1px 2.2px rgba(0, 0, 0, 0.02),
         0px 2.5px 5.3px rgba(0, 0, 0, 0.028),
         0px 4.8px 10px rgba(0, 0, 0, 0.035),
         0px 8.5px 17.9px rgba(0, 0, 0, 0.042),
-        0px 15.9px 33.4px rgba(0, 0, 0, 0.05),
-        0px 38px 80px rgba(0, 0, 0, 0.07);
-
+        0px 15.9px 33.4px rgba(0, 0, 0, 0.05), 0px 38px 80px rgba(0, 0, 0, 0.07);
     }
   }
 
@@ -223,11 +211,11 @@ p {
   }
 
   & .card-link::before {
-    font-family: 'Material Design Icons';
+    font-family: "Material Design Icons";
     content: "\F0CE0";
     font-weight: bold;
-    font-size: 1.0em;
-    line-height: 1.0em;
+    font-size: 1em;
+    line-height: 1em;
     margin: 0.3em 0.25em 0 0;
   }
 }
@@ -248,7 +236,6 @@ p {
 .footer {
   background-color: $soft-green;
 }
-
 
 /* Social buttons */
 .social-buttons {
@@ -306,7 +293,7 @@ p {
     color: $orange;
     font-weight: 600;
     text-decoration: underline 0.15em $orange;
-    text-underline-offset: 0.20em;
+    text-underline-offset: 0.2em;
   }
 
   & .section-caption {
@@ -336,16 +323,20 @@ p {
 
   & .img-overlay {
     display: block;
-    margin-top: -7.0rem;
+    margin-top: -7rem;
     margin-bottom: 0.2rem;
     height: 7.05rem;
     position: relative;
     z-index: 1000;
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 8%, rgba(56, 56, 56, 0.5044518051361169) 26%, rgba(17, 17, 17, 1) 69%);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 8%,
+      rgba(56, 56, 56, 0.5044518051361169) 26%,
+      rgba(17, 17, 17, 1) 69%
+    );
   }
 }
-
 
 /* Adjust carousel arrow placement */
 .carousel-control-next {
@@ -357,17 +348,13 @@ p {
   margin-left: -1.2rem;
 }
 
-
 .masthead--old {
-  clip-path: polygon(0 0,
-      /* left top */
-      100% 0,
-      /* right top */
-      100% 85%,
-      /* right bottom */
-      0 100%
-      /* left bottom */
-    );
+  clip-path: polygon(
+    0 0,
+    /* left top */ 100% 0,
+    /* right top */ 100% 85%,
+    /* right bottom */ 0 100% /* left bottom */
+  );
   background-image: url(/_work-files/main-avatar.png);
   background-size: 35rem;
   background-position: top -5rem right 7%;
